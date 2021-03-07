@@ -7,34 +7,40 @@ ro.prj_name=15055
 # RIL
 persist.data.netmgrd.qos.enable=true
 persist.data.tcpackprio.enable=true
-persist.radio.add_power_save=0
+persist.radio.add_power_save=1
 persist.radio.apm_sim_not_pwdn=1
 persist.radio.multisim.config=dsds
 rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 ro.data.large_tcp_window_size=true
 ro.ril.ext.ecclist=112,911,999,110,122,119,120,000,08,118
 ro.telephony.call_ring.multiple=0
-ro.telephony.default_network=9,9
+ro.telephony.default_network=9
 ro.use_data_netmgrd=true
 telephony.lteOnGsmDevice=1
 
 # Audio
-mm.enable.sec.smoothstreaming=true
+
 af.fast_track_multiplier=1
 audio.offload.video=true
 vendor.audio_hal.period_size=192
 vendor.audio.offload.buffer.size.kb=32
 vendor.audio.offload.multiple.enabled=false
 vendor.audio.offload.gapless.enabled=true
-media.aac_51_output_enabled=true
 audio.deep_buffer.media=true
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=7
 ro.vendor.audio.sdk.fluencetype=fluence
 persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicerec=false
+audio.offload.pcm.16bit.enable=true
+audio.offload.pcm.24bit.enable=true
+
 
 # Bluetooth
+
+vendor.qcom.bluetooth.soc=pronto
+
 ro.bluetooth.hfp.ver=1.7
 ro.qualcomm.bt.hci_transport=smd
 
@@ -45,12 +51,18 @@ ro.bluetooth.sap=false
 camera2.portability.force_api=1
 persist.camera.cpp.duplication=false
 
+# Display
+debug.hwui.use_buffer_age=false
+debug.sf.latch_unsignaled=1
+persist.hwc.mdpcomp.enable=true
+ro.opengles.version=196608
+
+
 # Graphics
 persist.hwc.mdpcomp.enable=true
 persist.sys.strictmode.disable=true
 ro.opengles.version=196608
 ro.qualcomm.cabl=0
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.vsync_event_phase_offset_ns=4000000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=8000000
 debug.hwui.use_buffer_age=false
@@ -58,11 +70,21 @@ debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=1
 
 # Media
+mm.enable.smoothstreaming=true
+media.aac_51_output_enabled=true
 debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
 
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
+
+# Network
+persist.data.netmgrd.qos.enable=true
+persist.data.tcpackprio.enable=true
+ro.data.large_tcp_window_size=true
+
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
 
 # QC vendor extension
 ro.frp.pst=/dev/block/platform/msm_sdcc.1/by-name/config
@@ -78,6 +100,9 @@ ro.qti.sensors.vmd=true
 
 # SBC codec
 persist.bluetooth.sbc_hd_higher_bitrate=true
+
+# Time services
+persist.timed.enable=true
 
 # Wifi
 wifi.interface=wlan0
