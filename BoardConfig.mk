@@ -95,7 +95,7 @@ BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 <<<<<<< HEAD:BoardConfig.mk
 # Display
 TARGET_SCREEN_DENSITY := 420
-=======
+
 # Dexpreopt
 WITH_DEXPREOPT_DEBUG_INFO := false
 
