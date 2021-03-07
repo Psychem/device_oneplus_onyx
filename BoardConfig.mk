@@ -102,7 +102,7 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_LEGACY_HW_DISK_ENCRYPTION := true
->>>>>>> 6523c3c6... msm8974-common: Set TARGET_LEGACY_HW_DISK_ENCRYPTION:BoardConfigCommon.mk
+TARGET_LEGACY_HW_DISK_ENCRYPTION:BoardConfigCommon.mk
 
 # Exclude serif fonts for saving system.img size.
 EXCLUDE_SERIF_FONTS := true
