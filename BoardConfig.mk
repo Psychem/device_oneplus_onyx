@@ -101,7 +101,6 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_LEGACY_HW_DISK_ENCRYPTION := true
-TARGET_LEGACY_HW_DISK_ENCRYPTION:BoardConfigCommon.mk
 
 # Exclude serif fonts for saving system.img size.
 EXCLUDE_SERIF_FONTS := true
