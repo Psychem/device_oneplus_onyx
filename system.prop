@@ -76,5 +76,8 @@ persist.data.qmi.adb_logmask=0
 ro.qti.sensors.gtap=true
 ro.qti.sensors.vmd=true
 
+# SBC codec
+persist.bluetooth.sbc_hd_higher_bitrate=true
+
 # Wifi
 wifi.interface=wlan0
